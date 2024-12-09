@@ -1,4 +1,5 @@
 
+import Controllers.MenuController;
 import Materia.Queues.Queque;
 import Materia.Queues.QuequeGeneric;
 import Materia.Stacks.Stack;
@@ -10,7 +11,11 @@ public class App {
         //runStack();
         //runStackGeneric();
         //runQueue();
-        runQuequeGeneric();
+        //runQuequeGeneric();
+        runContactManager();
+
+        
+
     }
 
     public static void runStack(){
@@ -85,5 +90,10 @@ public class App {
         cola.printQueuqe();
         
         
+    }
+    private static void runContactManager(){
+        MenuController menuController = new MenuController();
+        menuController.showMenu();
+
     }
 }
