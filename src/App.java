@@ -100,8 +100,8 @@ public class App {
         System.out.println("Ejercicio 1. ");
         String input1 = "([]){}";
         String input2 = "({)}";
-        System.out.println("Input: " +input1 +" -> "+ SingValidator.isValid(input1));
-        System.out.println("Input: " + input2+" -> " + SingValidator.isValid(input2));
+        System.out.println(" " + input1 +" : "+ SingValidator.isValid(input1));
+        System.out.println(" " + input2 +" : " + SingValidator.isValid(input2));
 
         System.out.println("\nEjercicio 2. ");
         java.util.Stack<Integer> stack = new java.util.Stack<>();
@@ -110,9 +110,9 @@ public class App {
         stack.push(4);
         stack.push(2);
 
-        System.out.println("Input: "+ stack);
+        System.out.println(" "+ stack);
         StackSorter.Ordenar(stack);
-        System.out.println("Output: " + stack);
+        System.out.println(" " + stack);
 
     }
 }
