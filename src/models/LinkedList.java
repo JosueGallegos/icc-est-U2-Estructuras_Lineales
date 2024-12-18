@@ -53,7 +53,7 @@ public class LinkedList <T>{
         this.head = head;
     }
 
-    public int getSize() {
+    public int getSize(int size) {
         return size;
     }
 
@@ -61,12 +61,10 @@ public class LinkedList <T>{
         this.size = size;
     }
 
-   
-
-   
+    @Override
+    public String toString() {
+        return "LinkedList [head=" + head + ", size=" + size + "]";
+    }
     
-    
 
-
-    
 }

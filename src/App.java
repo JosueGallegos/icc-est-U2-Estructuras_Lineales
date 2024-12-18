@@ -1,5 +1,6 @@
 
-import Controllers.MenuController;
+import Materia.Ejercicio_01_sign.SingValidator;
+import Materia.Ejercicio_02_sorting.StackSorter;
 import Materia.Queues.Queque;
 import Materia.Queues.QuequeGeneric;
 import Materia.Stacks.Stack;
@@ -12,10 +13,8 @@ public class App {
         //runStackGeneric();
         //runQueue();
         //runQuequeGeneric();
-        runContactManager();
-
-        
-
+        //runContactManager();
+        runEjercicios();
     }
 
     public static void runStack(){
@@ -91,9 +90,29 @@ public class App {
         
         
     }
-    private static void runContactManager(){
+    /*private static void runContactManager(){
         MenuController menuController = new MenuController();
         menuController.showMenu();
+
+    }*/
+
+    public static void runEjercicios(){
+        System.out.println("Ejercicio 1. ");
+        String input1 = "([]){}";
+        String input2 = "({)}";
+        System.out.println("Input: " +input1 +" -> "+ SingValidator.isValid(input1));
+        System.out.println("Input: " + input2+" -> " + SingValidator.isValid(input2));
+
+        System.out.println("\nEjercicio 2. ");
+        java.util.Stack<Integer> stack = new java.util.Stack<>();
+        stack.push(5);
+        stack.push(1);
+        stack.push(4);
+        stack.push(2);
+
+        System.out.println("Input: "+ stack);
+        StackSorter.Ordenar(stack);
+        System.out.println("Output: " + stack);
 
     }
 }

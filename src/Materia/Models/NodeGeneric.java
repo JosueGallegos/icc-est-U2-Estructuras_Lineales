@@ -11,10 +11,12 @@ public class NodeGeneric  <T>{
 
 
     }
+    
     @Override
-    public String toString(){
-        return  "Node :" + "Value :" + value  ;
+    public String toString() {
+        return "NodeGeneric [value=" + value + ", next=" + next + "]";
     }
+
     public T getValue() {
         return value;
     }
